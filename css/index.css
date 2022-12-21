@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-: root{
+root{
 --dark: #350363;
 --background: #ffe9db;
 }
@@ -96,6 +96,50 @@ button:hover{
 }
 
 button :last-child{
-    background-color: var(--dark);
+    background: var(--dark);
     margin-bottom: 0 ;
+}
+
+/*-------------------------
+game area
+---------------------*/
+
+#gameArea{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#newGameButton{
+    margin: 2rem 0;
+}
+
+input{
+    border: .1rem solid lightgray;
+    background: transparent;
+    margin: 4rem 0;
+    padding: 2rem 0;
+    width: 25rem;
+    text-align: center;
+    font-family: "Josefin Sans",sans-serif ;
+}
+
+.stats{
+    text-align: left;
+    margin-bottom: 4rem;
+
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.info span{
+    font-size: 2rem;
+    color: #ff0511;
 }
